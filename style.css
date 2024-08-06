@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Platypi:ital,wght@0,300..800;1,300..800&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+   
+}
+.header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 150px;
+    align-items: center;
+    border-bottom: 1px solid rgb(233, 228, 212);
+}
+.menu {
+    display: inline;
+}
+.menu a{
+    margin: auto 23px;
+    text-decoration: none;
+    font-family:"Roboto", sans-serif;
+    color: #333;
+    font-size: 18px;
+    font-weight:500;
+}
+.menu a:hover{
+    color: rgba(0, 219, 182, 1);
+}
+
+.login span:hover {
+   color:rgba(0, 219, 182, 1);
+}
+.login {
+    display: flex;
+    align-items: center;  
+}
+.login a{
+    text-decoration: none;
+}
+.login span {
+    display: inline;
+    padding: 0 15px;
+    font-family:"Roboto", sans-serif;
+    color: #333;margin: auto;
+    font-size: 18px;
+    font-weight:500;
+}
+.login img {
+    display: inline;
+    margin: auto 10px;
+}
+/* `Main content */
+.ctn {
+    height: 500px;
+    width: 1300px;
+    margin: 100px auto;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+}
+
+/* left cart */
+.leftcrt {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+}
+.leftcrt h1 {
+    font-family: "Roboto", sans-serif;
+}
+.cart1 {
+  background-color: white;
+  border: 0.2px solid  rgb(175, 174, 174);
+  width: 100%;
+  height: 45%;
+  margin-right: 20px;
+  border-radius: 15px;
+  display: flex;
+  justify-content:space-evenly;
+  flex-direction: row;
+  align-items: center; 
+}
+.googleDoc1 {
+    width: 180px;
+    height: 170px;
+    /* border: 1px solid #333; */
+    border-radius: 10px;   
+}
+.googleDoc1 img {
+    width: 100%;
+    height: 100%;
+}
+.cart1 .deleteicon {
+    margin-left: 50px;
+    border: 1px solid rgba(0, 219, 182, 1);
+    border-radius: 100px;
+    padding: 5px;
+    transition: all 0.5s ease;
+}
+.cart1 .deleteicon:hover {
+    background-color: palevioletred;
+}
+.finalcrt1 {
+    display: flex;
+    flex-direction: column;
+    font-family: "Roboto", sans-serif;
+    gap: 50px;
+    margin-right: 100px;
+    background-color: white;
+}
+.finalcrt1 h3 {
+    font-size: 18px;
+}
+.finalcrt1 p {
+    color: rgb(175, 174, 174);
+    font-size: 16px;
+}
+.bigdot {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+.cart1 select {
+    border-radius: 10%;
+    border-color: rgba(0, 219, 182, 1);
+    font-family: "Roboto", sans-serif;
+}
+ .dot1{
+    border: 1px solid rgba(0, 219, 182, 1);
+    width: 10px;
+    height: 10px;
+    background-color:rgba(0, 219, 182, 1);
+    border-radius: 100px;
+ }
+.cart2 {
+    border: 0.2px solid  rgb(175, 174, 174);
+    width: 100%;
+    height: 45%;
+    border-radius: 15px;
+    display: flex;
+    justify-content:space-evenly;
+    flex-direction: row;
+    align-items: center;
+}
+.cart2 .deleteicon2 {
+    margin-left: 50px;
+    border: 1px solid rgba(0, 219, 182, 1);
+    border-radius: 100px;
+    padding: 5px;
+    transition: all 0.5s ease;
+}
+.cart2 .deleteicon2:hover{
+    background-color: palevioletred;
+}
+.googleDoc2 {
+    width: 180px;
+    height: 170px;
+    border-radius: 10px;   
+}
+.googleDoc2 img {
+    width: 100%;
+    height: 100%;
+    margin: 5px;
+}
+.cart2 .finalcrt1 {
+    margin-left: px;
+}
+.cart2 select {
+    border-radius: 10%;
+    border-color: rgba(0, 219, 182, 1);
+    font-family: "Roboto", sans-serif;
+}
+/* Right Cart */
+.rightcrt {
+    width: 700px;
+    height: 350px;
+    margin: 55px 20px;
+    border: 0.2px solid  rgb(175, 174, 174);;
+    border-radius: 15px;
+}
+.rcrt-info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    height: 80%;
+    padding: 20px;
+}
+.rcrt-info h2 {
+   font-family:  "Roboto", sans-serif;
+   font-weight: 600;
+
+}
+.info1 {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    font-family:"Roboto", sans-serif;
+    font-size: 18px;
+}
+.info2 {
+    display: flex;
+    justify-content:space-between ;
+    padding-right: -10px;
+    align-items: center;
+    padding-top: 20px;
+    font-family:"Roboto", sans-serif;
+    font-size: 18px;
+}
+.info2 input {
+    width: 70%;
+    height: 35px;
+    border-radius: 5px;
+    padding: 10px;
+    border: 1px solid rgb(175, 174, 174);
+}
+.info2 button {
+    width: 20%;
+    height: 40px;
+    border-radius: 5px;
+    color:rgba(0, 219, 182, 1);
+  background-color: transparent;
+  border: 1px solid rgba(0, 219, 182, 1);
+  font-family:"Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+}
+button:hover{
+    color:white;
+    background-color:rgba(0, 219, 182, 1);
+}
+.info3 {
+    display: flex;
+    justify-content:space-between ;
+    align-items: center;
+}
+.info3 h3 {
+    color:rgba(0, 219, 182, 1);
+    font-size: 2rem; font-weight:bold;
+    font-family:"Roboto", sans-serif;
+}
+.info3 p {
+    font-family:"Roboto", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+}
+.checkout-button {
+   width: 90%;
+   height: 35px; 
+   border-radius: 5px;
+   color: #333;
+   background-color:rgba(0, 219, 182, 1) ;
+   border: 1px solid rgba(0, 219, 183, 0);
+   font-family:"Roboto", sans-serif;
+   font-size: 16px;
+   font-weight: 600;
+   margin: auto;
+}
+.checkout-button p {
+  padding-bottom: 20px;
+  padding-top: 10px;
+}
+hr {
+    width: 70%;
+    margin-left: 75px;
+    border:0.3px solid  rgb(175, 174, 174);
+}
